@@ -1,0 +1,82 @@
+{
+    "apiVersion": "2023-05-01",
+    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/az104-rg3/providers/Microsoft.Storage/storageAccounts/storagedg2b",
+    "name": "storagedg2b",
+    "type": "microsoft.storage/storageaccounts",
+    "sku": {
+        "name": "Standard_RAGRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "location": "eastus",
+    "tags": {
+        "Cost Center": "000"
+    },
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-12-08T18:17:26.3225647Z",
+            "key2": "2024-12-08T18:17:26.3225647Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "largeFileSharesState": "Enabled",
+        "networkAcls": {
+            "ipv6Rules": [],
+            "resourceAccessRules": [
+                {
+                    "tenantId": "cc21b1ed-90b9-4515-9a68-058a2ceb1966",
+                    "resourceId": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/providers/Microsoft.Security/datascanners/storageDataScanner"
+                }
+            ],
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-12-08T18:17:26.4944368Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-12-08T18:17:26.4944368Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-12-08T18:17:26.1975679Z",
+        "primaryEndpoints": {
+            "dfs": "https://storagedg2b.dfs.core.windows.net/",
+            "web": "https://storagedg2b.z13.web.core.windows.net/",
+            "blob": "https://storagedg2b.blob.core.windows.net/",
+            "queue": "https://storagedg2b.queue.core.windows.net/",
+            "table": "https://storagedg2b.table.core.windows.net/",
+            "file": "https://storagedg2b.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "westus",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://storagedg2b-secondary.dfs.core.windows.net/",
+            "web": "https://storagedg2b-secondary.z13.web.core.windows.net/",
+            "blob": "https://storagedg2b-secondary.blob.core.windows.net/",
+            "queue": "https://storagedg2b-secondary.queue.core.windows.net/",
+            "table": "https://storagedg2b-secondary.table.core.windows.net/"
+        }
+    }
+}
