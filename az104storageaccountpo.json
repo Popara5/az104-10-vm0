@@ -1,0 +1,76 @@
+Storage Account 
+
+{
+    "apiVersion": "2023-05-01",
+    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/az104-rg-region1/providers/Microsoft.Storage/storageAccounts/az104storageaccountpo",
+    "name": "az104storageaccountpo",
+    "type": "microsoft.storage/storageaccounts",
+    "sku": {
+        "name": "Standard_RAGRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2025-01-01T15:41:17.466Z",
+            "key2": "2025-01-01T15:41:17.466Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "largeFileSharesState": "Enabled",
+        "networkAcls": {
+            "ipv6Rules": [],
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2025-01-01T15:41:17.763Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2025-01-01T15:41:17.763Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2025-01-01T15:41:17.341Z",
+        "primaryEndpoints": {
+            "dfs": "https://az104storageaccountpo.dfs.core.windows.net/",
+            "web": "https://az104storageaccountpo.z13.web.core.windows.net/",
+            "blob": "https://az104storageaccountpo.blob.core.windows.net/",
+            "queue": "https://az104storageaccountpo.queue.core.windows.net/",
+            "table": "https://az104storageaccountpo.table.core.windows.net/",
+            "file": "https://az104storageaccountpo.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "westus",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://az104storageaccountpo-secondary.dfs.core.windows.net/",
+            "web": "https://az104storageaccountpo-secondary.z13.web.core.windows.net/",
+            "blob": "https://az104storageaccountpo-secondary.blob.core.windows.net/",
+            "queue": "https://az104storageaccountpo-secondary.queue.core.windows.net/",
+            "table": "https://az104storageaccountpo-secondary.table.core.windows.net/"
+        }
+    }
+}
